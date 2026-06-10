@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="joke-styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="joke-container">
+        <div class="header">
+            <h1>😂 Cosmic Joke Generator 😂</h1>
+            <p>Laugh at the universe's finest jokes</p>
+        </div>
+        
+        <div class="joke-card" id="jokeCard">
+            <div class="joke-content">
+                <p id="jokeText" class="joke-text">Click the button to get a cosmic joke!</p>
+                <p id="jokeCategory" class="joke-category"></p>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button id="newJokeBtn" class="btn btn-primary" onclick="fetchJoke()">
+                <span class="btn-text">Generate Joke</span>
+                <span class="btn-icon">✨</span>
+            </button>
+            <button id="shareBtn" class="btn btn-secondary" onclick="shareJoke()">
+                <span class="btn-text">Share</span>
+                <span class="btn-icon">🔗</span>
+            </button>
+            <button id="darkModeBtn" class="btn btn-secondary" onclick="toggleDarkMode()">
+                <span class="btn-text">Dark Mode</span>
+                <span class="btn-icon">🌙</span>
+            </button>
+        </div>
+        
+        <div class="joke-history">
+            <h3>📜 Recent Jokes</h3>
+            <div id="jokeList" class="joke-list"></div>
+        </div>
+        
+        <div class="category-filter">
+            <h3>🎭 Filter by Category</h3>
+            <div id="categoryButtons" class="category-buttons"></div>
+        </div>
+        
+        <button class="back-btn" onclick="goBackToUniverse()">← Back to Universe</button>
+    </div>
+    
+    <script src="joke-script.js"></script>
+</body>
+</html>
