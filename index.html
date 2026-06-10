@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Universe - A Wonder for Lovers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background" id="background"></div>
+    
+    <div class="universe-container">
+        <!-- Solar System with Planets -->
+        <div class="solar-system" id="solarSystem">
+            <div class="sun" id="sunButton"></div>
+            
+            <div class="orbit orbit-1">
+                <div class="planet mercury" data-page="mercury"></div>
+            </div>
+            
+            <div class="orbit orbit-2">
+                <div class="planet venus" data-page="venus"></div>
+            </div>
+            
+            <div class="orbit orbit-3">
+                <div class="planet earth" data-page="earth"></div>
+            </div>
+            
+            <div class="orbit orbit-4">
+                <div class="planet mars" data-page="mars"></div>
+            </div>
+            
+            <div class="orbit orbit-5">
+                <div class="planet jupiter" data-page="jupiter"></div>
+            </div>
+        </div>
+        
+        <!-- Floating Wonder Cards -->
+        <div class="wonder-cards-container">
+            <div class="wonder-card card-1">
+                <h3>✨ Whispers of Love</h3>
+                <p>In the vast cosmos, two souls find each other...</p>
+                <a href="#wonder-page" class="card-link">Explore ✨</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Wonder Page with Shooting Stars -->
+    <div class="page wonder-page" id="wonder-page">
+        <div class="background-stars"></div>
+        <div class="page-content">
+            <button class="back-btn" onclick="goBack()">← Back to Universe</button>
+            <h2>✨ Wonders of the Universe ✨</h2>
+            
+            <div class="shooting-stars-container" id="shootingStarsContainer"></div>
+            
+            <div class="message-display" id="messageDisplay"></div>
+        </div>
+    </div>
+    
+    <!-- Planets Pages -->
+    <div class="page planet-page" id="mercury">
+        <div class="background-stars"></div>
+        <button class="back-btn" onclick="goBack()">← Back to Universe</button>
+        <div class="page-content">
+            <h2>☿️ Mercury - Swift Messenger</h2>
+            <div class="planet-cards-container" id="mercuryCards"></div>
+        </div>
+    </div>
+    
+    <div class="page planet-page" id="venus">
+        <div class="background-stars"></div>
+        <button class="back-btn" onclick="goBack()">← Back to Universe</button>
+        <div class="page-content">
+            <h2>♀️ Venus - Goddess of Love</h2>
+            <div class="planet-cards-container" id="venusCards"></div>
+        </div>
+    </div>
+    
+    <div class="page planet-page" id="earth">
+        <div class="background-stars"></div>
+        <button class="back-btn" onclick="goBack()">← Back to Universe</button>
+        <div class="page-content">
+            <h2>🌍 Earth - Our Home</h2>
+            <div class="planet-cards-container" id="earthCards"></div>
+        </div>
+    </div>
+    
+    <div class="page planet-page" id="mars">
+        <div class="background-stars"></div>
+        <button class="back-btn" onclick="goBack()">← Back to Universe</button>
+        <div class="page-content">
+            <h2>♂️ Mars - The Red Planet</h2>
+            <div class="planet-cards-container" id="marsCards"></div>
+        </div>
+    </div>
+    
+    <div class="page planet-page" id="jupiter">
+        <div class="background-stars"></div>
+        <button class="back-btn" onclick="goBack()">← Back to Universe</button>
+        <div class="page-content">
+            <h2>♃ Jupiter - The Giant</h2>
+            <div class="planet-cards-container" id="jupiterCards"></div>
+        </div>
+    </div>
+    
+    <!-- Big Bang Page -->
+    <div class="page bigbang-page" id="bigbang">
+        <div class="bigbang-container">
+            <div class="explosion" id="explosion"></div>
+            <div class="constellation" id="constellation"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
